@@ -19,5 +19,6 @@ source activate picrust2
 Finally, run the tests to verify the install was successful (work in picrust2 conda environment):
 
 ```
+conda activate picrust2
 pytest
 ```
