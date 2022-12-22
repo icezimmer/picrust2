@@ -16,15 +16,21 @@ conda env create -f picrust2-env.yaml
 source activate picrust2
 ```
 
-Finally, run the tests to verify the install was successful (work in picrust2 conda environment):
+Activate the conda environment and install deps with pip:
 
 ```
 conda activate picrust2
+pip install --no-deps --editable .
+```
+
+Finally, run the tests to verify the install was successful (work in picrust2 conda environment):
+
+```
 pytest
 ```
 
 Command to launch
 
 ```
-scripts/picrust2_pipeline.py -s data/dna-sequences.fasta -i data/feature-table.biom -o out
+picrust2_pipeline.py -s data/dna-sequences.fasta -i data/feature-table.biom -o out
 ```
