@@ -22,3 +22,9 @@ Finally, run the tests to verify the install was successful (work in picrust2 co
 conda activate picrust2
 pytest
 ```
+
+Command to launch
+
+```
+scripts/picrust2_pipeline.py -s data/dna-sequences.fasta -i data/feature-table.biom -o out
+```
